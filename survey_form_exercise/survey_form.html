@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <main id="main">
+    <section id="formpage">
+      <h1 id="title">React Learning Feedback Form</h1>
+      <p id="description"><em>This form collects a short feedback on your react training.</em></p>
+      <form id="survey-form">
+        <div class="alignfield">
+          <label for="name" id="name-label">Name</label>
+          <input type="name" id="name" class="fieldstyle" placeholder="Enter your name" required />
+        </div>
+        <div class="alignfield">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" class="fieldstyle" placeholder="Enter your email" required />
+        </div>
+        <div class="alignfield">
+          <label for="number" id="number-label">Number of days taken to complete training(optional)</label>
+          <input type="number" min=0 max=100 id="number" class="fieldstyle"
+            placeholder="Enter number of days taken to complete training" />
+        </div>
+        <div class="alignfield">
+          <label for="dropdown">Which option best describes your proficiency?</label>
+          <select id="dropdown" name="currentPos" class="fieldstyle">
+            <option disabled selected value>Select level of proficiency</option>
+            <option value="student">Design components with react, Only UI part</option>
+            <option value="full time job">React Ui development and state management techniques</option>
+            <option value="full time learner">UI, State Management, Backend with any one preffered option</option>
+            <option value="prefer not to say">Developed a mini project</option>
+            <option value="other">Developed a complete project using react</option>
+          </select>
+        </div>
+        <div class="alignfield">
+          <label for="">How likely is you wish to take over react projects ? </label>
+          <label><input type="radio" name="radio-buttons" value="1" />Anytime</label>
+          <label><input type="radio" name="radio-buttons" value="2" />In one to two weeks</label>
+          <label><input type="radio" name="radio-buttons" value="3" />Need some more time</label>
+        </div>
+        <div class="alignfield">
+          <label for="prefer">Things you think toughest in learning phase</label>
+          <label class="labels"><input name="prefer" value="1" type="checkbox">Mentoring support</label>
+          <label class="labels"><input name="prefer" value="2" type="checkbox">Lack of resource</label>
+          <label class="labels"><input name="prefer" value="3" type="checkbox">Short Time Period</label>
+        </div>
+        <div class="alignfields">
+          <textarea id="subject" class="fieldstyle" name="subject" placeholder="Write your feedback here.."
+            style="height:50px;width: 500px;"></textarea>
+        </div>
+        <div>
+          <input type="submit" id="submit" value="Submit" style="text-align:center; margin: 10px 0px 10px 0px;;padding: 5px 35px 5px 35px;
+  border-radius: 5px;border: none;">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

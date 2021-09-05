@@ -1,0 +1,18 @@
+// In Sass, a mixin is a group of CSS declarations that can be reused throughout the style sheet.
+
+// A single line calling the mixin replaces having to type all the vendor prefixes. A mixin is called with the @include directive:
+
+  @mixin border-radius($radius)
+  {
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius:$radius;
+  }
+
+  #awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px);
+  }

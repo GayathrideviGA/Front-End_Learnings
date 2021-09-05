@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<main id="main-doc">
+  <nav id="navbar">
+    <header id="nav-header">React</header>
+    <ul>
+      <a class="nav-link" href="#react.component" rel="internal">
+        <li>React.Component</li>
+      </a>
+      <li><a class="nav-link" href="#react_dom" rel="internal">React DOM</a></li>
+      <a class="nav-link" href="#react_dom_server" class="nav-link" rel="internal">
+        <li>React DOM Server</li>
+      </a>
+      <a class="nav-link" href="#dom_elements" class="nav-link" rel="internal">
+        <li>DOM Elements</li>
+      </a>
+      <a class="nav-link" href="#synthetic_event" rel="internal">
+        <li>Synthetic Event</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="sectiondesign">
+    <section class="main-section" id="react.component">
+      <header class="sectionheader">React.Component</header>
+      <p class="sectionpara">React lets you define components as classes or functions. Components defined as classes
+        currently provide more features which are described in detail on this page. To define a React component class,
+        you need to extend React.Component:</p>
+      <code class="sectioncode">class Welcome extends React.Component {
+  render() {
+    return "Hello, {this.props.name}";
+  }
+}</code>
+      <p class="sectionpara">Mounting methods are called in the following order when an instance of a component is being
+        created and inserted into the DOM:</P>
+      <ul class="sectionul">
+        <li class="sectionli">constructor()</li>
+        <li class="sectionli">static getDerivedStateFromProps()</li>
+        <li class="sectionli">render()</li>
+        <li class="sectionli">componentDidMount()</li>
+      </ul>
+      <p class="sectionpara">The only method you must define in a React.Component subclass is called render(). All the
+        other methods described on this page are optional.</P>
+    </section>
+
+
+    <section class="main-section" id="react_dom">
+      <header class="sectionheader">React DOM</header>
+      <p class="sectionpara">The react-dom package provides DOM-specific methods that can be used at the top level of
+        your app and as an escape hatch to get outside of the React model if you need to.</p>
+      <p class="sectionpara">Most of your components should not need to use this module.</P>
+      <ul class="sectionul">
+        <li class="sectionli">constructor()</li>
+        <li class="sectionli">static getDerivedStateFromProps()</li>
+        <li class="sectionli">render()</li>
+        <li class="sectionli">componentDidMount()</li>
+      </ul>
+      <code class="sectioncode">ReactDOM.render(element, container[, callback])</code>
+      <p class="sectionpara">If you use ES6 with npm, you can write import ReactDOM from 'react-dom'</P>
+    </section>
+
+    <section class="main-section" id="react_dom_server">
+      <header class="sectionheader">React DOM Server</header>
+      <p class="sectionpara">The ReactDOMServer object enables you to render components to static markup. Typically,
+        it’s used on a Node server:</p>
+      <code class="sectioncode">
+        // ES modules
+      import ReactDOMServer from 'react-dom/server';</code>
+      <p class="sectionpara">The following methods can be used in both the server and browser environments:</P>
+      <ul class="sectionul">
+        <li class="sectionli">renderToString()</li>
+        <li class="sectionli">renderToStaticMarkup()</li>
+      </ul>
+      <p class="sectionpara">If you plan to use React on the client to make the markup interactive, do not use this
+        method. Instead, use
+        renderToNodeStream on the server and ReactDOM.hydrate() on the client.</P>
+    </section>
+
+    <section class="main-section" id="dom_elements">
+      <header class="sectionheader">DOM Elements</header>
+      <p class="sectionpara">React implements a browser-independent DOM system for performance and cross-browser
+        compatibility. We took the
+        opportunity to clean up a few rough edges in browser DOM implementations.</p>
+      <code class="sectioncode">function createMarkup() {
+      return {__html: 'First and middot; Second'};
+      }</code>
+      <p class="sectionpara">There are a number of attributes that work differently between React and HTML:
+      </P>
+      <ul class="sectionul">
+        <li class="sectionli">checked</li>
+        <li class="sectionli">className</li>
+      </ul>
+      <p class="sectionpara">This is useful for building controlled components. defaultChecked is the uncontrolled
+        equivalent, which sets whether the
+        component is checked when it is first mounted.
+      </P>
+    </section>
+
+    <section class="main-section" id="synthetic_event">
+      <header class="sectionheader">Synthetic Event</header>
+      <p class="sectionpara">This reference guide documents the SyntheticEvent wrapper that forms part of React’s Event
+        System. See the Handling Events guide to learn more.</p>
+      <code class="sectioncode">
+          void preventDefault()
+          boolean isDefaultPrevented()
+          void stopPropagation()
+          boolean isPropagationStopped()
+
+        </code>
+      <p class="sectionpara">List of supported events</P>
+      <ul class="sectionul">
+        <li class="sectionli">Clipboard Events</li>
+        <li class="sectionli">Focus Events</li>
+      </ul>
+      <p class="sectionpara">React normalizes events so that they have consistent properties across different browsers.
+        The event handlers below are triggered by an event in the bubbling phase.</P>
+    </section>
+
+
+  </div>
+</main>
+
+</html>

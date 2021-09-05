@@ -1,0 +1,26 @@
+<!-- Everything displayed by CSS is a box. Understanding how the CSS Box Model works is therefore a core foundation of CSS. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .withoutbox {
+      width: 100pxt;
+      height: 100px;
+      padding: 20px;
+      border: 1px solid;
+    }
+
+    .withbox {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="withoutbox">I am a paragraph of text that has a few words in it.</p>
+  <p class="withoutbox withbox">I am a paragraph of text that has a few words in it.</p>
+</body>
+
+</html>

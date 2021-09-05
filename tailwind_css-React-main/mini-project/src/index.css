@@ -1,0 +1,14 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-item {
+  @apply w-60 flex justify-around items-center text-indigo-200 text-lg no-underline
+                hover:bg-gradient-to-r from-indigo-800
+                hover:text-white
+                hover:font-mono;
+}
+.list-item-name {
+  @apply w-16 text-left tracking-wide;
+}

@@ -1,0 +1,48 @@
+<!-- A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of
+roles and you can learn about them in this module. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .article1::first-letter {
+      font-size: 56px;
+      color: aqua;
+    }
+
+
+
+    .article2::before {
+      content: 'Hiiii ';
+
+    }
+
+    .article3::after {
+      content: "Endsss";
+    }
+
+    input::placeholder {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1>My Css Learning</h1>
+    <p class="article1">Hi this is my css learning code repo</p>
+  </article>
+  <article class="article2">
+    <h1>My Css Learning</h1>
+    <p>Hi this is my css learning code repo</p>
+  </article>
+  <article class="article3">
+    <h1>My Css Learning</h1>
+    <p>Hi this is my css learning code repo</p>
+  </article>
+  <label for="email">Email address</label>
+  <input type="email" placeholder="your mail@example.com" id="email" />
+</body>
+
+</html>

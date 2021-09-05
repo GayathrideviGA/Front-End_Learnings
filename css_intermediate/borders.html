@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-color: var(--color-primary);
+      border-width: 5px;
+      aspect-ratio: 5/1;
+    }
+
+    .auto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+      gap: 1rem;
+      padding: 0;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    .my-element {
+      max-width: 300px;
+      height: 100px;
+      border: 3px solid goldenrod;
+    }
+
+    .element {
+      width: 200px;
+      height: 200px;
+      border: thick solid;
+      border-top-color: red;
+      border-left-color: blue;
+      border-right-color: green;
+      border-bottom-color: gold;
+    }
+
+    .freeform {
+      width: 200px;
+      height: 200px;
+      border: 2px solid aqua;
+      border-radius: 95px 155px 148px 103px / 48px 95px 130px 203px;
+    }
+
+    .imageBorder {
+      width: 300px;
+      height: 150px;
+      border: 1px solid;
+      border-image-slice: 61 58 51 48;
+      border-image-width: 20px 20px 20px 20px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-image-repeat: stretch stretch;
+      border-image-source: url('https://png.pngtree.com/element_our/png/20180918/beautiful-cube-pattern-png_92262.jpg');
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="auto-grid">
+      <div class="preview" style="border-style: dotted">
+        <code>border-style: dotted;</code>
+      </div>
+      <div class="preview" style="border-style: dashed">
+        <code>border-style: dashed;</code>
+      </div>
+      <div class="preview" style="border-style: solid">
+        <code>border-style: solid;</code>
+      </div>
+      <div class="preview" style="border-style: double">
+        <code>border-style: double;</code>
+      </div>
+      <div class="preview" style="border-style: groove">
+        <code>border-style: groove;</code>
+      </div>
+      <div class="preview" style="border-style: ridge">
+        <code>border-style: ridge;</code>
+      </div>
+      <div class="preview" style="border-style: inset">
+        <code>border-style: inset;</code>
+      </div>
+      <div class="preview" style="border-style: outset">
+        <code>border-style: outset;</code>
+      </div>
+    </div>
+    <br />
+    <div class="my-element"></div>
+    <br />
+    <div class="element"></div>
+    <br />
+    <div class="freeform"></div>
+    <br />
+    <div class="imageBorder"></div>
+  </main>
+</body>
+
+</html>

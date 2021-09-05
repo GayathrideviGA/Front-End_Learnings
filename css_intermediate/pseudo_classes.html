@@ -1,0 +1,65 @@
+<!-- A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of
+roles and you can learn about them in this module. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    input:invalid {
+      border: 2px solid red;
+
+    }
+
+    input:valid {
+      border: 2px solid green;
+
+    }
+
+    button:focus {
+      outline: 2px dashed blue;
+      outline-offset: 2px;
+      background-color: aqua;
+      color: blue;
+    }
+
+    .helper {
+      display: none;
+    }
+
+    :focus-within .helper {
+      display: block;
+    }
+
+    .buttontwo:focus {
+      outline: 2px dashed blue;
+      outline-offset: 2px;
+      background-color: aquamarine;
+    }
+
+    .helper {
+      font-weight: bold;
+      padding: 0.5rem 0;
+    }
+
+    /* :focus-visible to see tab key actions */
+  </style>
+</head>
+
+<body>
+  <br />
+  <br />
+  <label for="email">Email address</label>
+  <input type="email" placeholder="your mail@example.com" id="email" />
+  <br />
+  <br />
+  <button class="button">Pseudo Classes Demo</button>
+  <br />
+  <br />
+  <div class="wrapper">
+    <button class="buttontwo">Focus within demo</button>
+    <div class="helper">Helper text</div>
+  </div>
+</body>
+
+</html>

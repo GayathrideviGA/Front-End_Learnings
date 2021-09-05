@@ -1,0 +1,66 @@
+#main{
+    background-image: url('https://seo-trench.com/wp-content/uploads/2019/11/12-Websites-You-Should-Check-Out-to-Learn-Web-Development-Fast.png');
+    display: block;
+    position: relative;
+  max-width:100%;
+  height:auto;
+  padding-bottom:30px;
+}
+#main::after {
+    content: "";
+    background: rgba(16, 16, 16, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+#main > * {
+    z-index: 10;
+}
+#formpage{
+  z-index: 9998!important;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#title{
+  font-size:36px;
+  color:#ffffff;
+}
+#description
+{
+   color:#ffffff;
+    margin:0;
+  font-size:20px;
+}
+#survey-form
+{
+  margin-top:40px;
+  max-width:100%;
+  padding:20px 200px 20px 20px;
+  height:auto;
+  background-color:#1ba1aa;
+  border-radius:10px;
+  opacity:0.9;
+}
+.alignfield{
+  display:flex;
+  flex-direction:column;
+}
+label{
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 0px 10px 0px;
+}
+.fieldstyle
+{
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+border: none;
+font-size: 16px;
+color: darkgrey;
+}

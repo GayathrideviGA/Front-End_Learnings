@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    :root {
+      --boxWidth: 200px;
+      --boxHeight: 200px;
+      --fromTop: 20px;
+    }
+
+    .box1 {
+      margin: var(--fromTop);
+      width: var(--boxWidth);
+      height: var(--boxHeight);
+      background-color: darkgoldenrod;
+      /* box-shadow: inset(optional) horizontal offset vertical offset blurRadius spread radius color*/
+      box-shadow: 1px 1px 10px 1px gray;
+    }
+
+    .box2 {
+      margin: var(--fromTop);
+      width: var(--boxWidth);
+      height: var(--boxHeight);
+      background-color: black;
+      /* Multiple color shadow */
+      box-shadow: 5px 5px 20px 5px aqua, -5px -5px 10px 5px antiquewhite,
+        inset 0px 0px 5px 2px aquamarine, inset 0px 0px 5px 5px gray;
+    }
+
+    .box3 {
+      border-radius: 50px;
+      margin: var(--fromTop);
+      width: var(--boxWidth);
+      height: var(--boxHeight);
+      background-color: black;
+      /* Multiple color shadow */
+      box-shadow: 5px 5px 20px 5px aqua, -5px -5px 10px 5px antiquewhite,
+        inset 0px 0px 5px 2px aquamarine, inset 0px 0px 5px 5px gray;
+    }
+
+    .text1 {
+      font-size: 46px;
+      text-shadow: 3px 3px 3px blue;
+      color: yellow;
+    }
+
+    .text2 {
+      font-size: 46px;
+      text-shadow: 1px 1px 0px rgb(35, 220, 241),
+        2px 2px 0px aliceblue;
+      color: rgb(142, 107, 36);
+    }
+
+    .image {
+      width: 300px;
+      height: 300px;
+      filter: drop-shadow(0px 0px 10px rgba(35 220 241 / 30%));
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <br />
+  <div class="text1">CSS Shadows Exercise</div>
+  <br />
+  <div class="text2">Multiple Shadows</div>
+  <br />
+  <br />
+  <img class="image" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/04/css-3-logo.png" />
+</body>
+
+</html>

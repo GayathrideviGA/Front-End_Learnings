@@ -1,0 +1,110 @@
+<!-- CSS selector is used to find specific element and apply a CSS rule -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* UNIVERSAL SELECTORS */
+    * {
+      color: aqua;
+    }
+
+    /* TYPE SELECTORS */
+    h1 {
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    /* CLASS SELECTORS */
+    .subtitle {
+      font-size: 38px;
+    }
+
+    input {
+      border-radius: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    /* ID SELECTORS */
+    #description {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* ATTRIBUTE SELECTORS */
+    /* [ s] =case sensitive*/
+    input[type="text"] {
+      padding: 10px;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      border: 8px solid purple;
+    }
+
+    /* GROUPING SELECTORS */
+    p,
+    h1 {
+      font-style: italic;
+    }
+
+    /* PSEUDO CLASSES */
+    p:nth-child(even) {
+      background: purple;
+    }
+
+    a:hover {
+      font-size: 26px;
+      color: purple;
+    }
+
+    /* PSEUDO ELEMENT */
+    p::before {
+      content: 'Para ';
+    }
+
+    p::after {
+      content: ' ends';
+    }
+
+    li::marker {
+      color: purple;
+      font-size: 20px;
+    }
+
+    ::selection {
+      background: rgb(1, 26, 25);
+    }
+
+    /* DESCENDANT COMBINATORS */
+    p strong {
+      color: aquamarine;
+    }
+  </style>
+</head>
+<div>
+  <h1>CSS Selectors</h1>
+  <p class="subtitle"><strong>Description</strong></p>
+</div>
+<p class="subtitle">Description two</p>
+<p id="description">Description</p>
+<input type="text" placeholder="Enter your text one" />
+<input type="text" placeholder="Enter your text two" />
+<input type="number" placeholder="Enter your number" />
+<br>
+<br>
+<a href="https://developer.mozilla.org/en-US/">Here is my reference</a>
+<br>
+<br>
+<li>This is a bulletin</li>
+
+<body>
+
+</body>
+
+</html>
